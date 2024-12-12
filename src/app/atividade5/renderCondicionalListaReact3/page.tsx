@@ -45,7 +45,7 @@ function Mailbox({ notificationsArray }: MailboxProps) {
             You have {unreadMessages.length} unread messages.
           </h2>
           {/* Junto disso implementei um '.map' com base no 'json.name' quais pessoas são donas das mensagens não lidas */}
-          {unreadMessages.map(notView => <h1>
+          {unreadMessages.map(notView => <h1 key={notView.id}>
             You haves messages of {notView.name}
           </h1>)}
         </div>}
